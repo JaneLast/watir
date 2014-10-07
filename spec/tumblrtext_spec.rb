@@ -9,27 +9,27 @@ describe "Login method" do
     @browser.link(:text, /^Log/).click
     
     # inputs username and passwords into correct fields
-    browser.text_field(:name, "user[email]").set "jkempton@testingcircle.com"
-    browser.text_field(:name, "user[password]").set "tumbrlaccount"
+    @browser.text_field(:name, "user[email]").set "jkempton@testingcircle.com"
+    @browser.text_field(:name, "user[password]").set "tumbrlaccount"
     
     # Go button clicked
-    browser.button(:id, "signup_forms_submit").click
+    @browser.button(:id, "signup_forms_submit").click
   end
 end
 describe "Create a Text post" do
   it "Creates a Text post" do
   
     # Text button clicked
-    browser.element(:id, "new_post_label_text").click
+    @browser.element(:id, "new_post_label_text").click
     
     # Input "Hello World" into the text body
-    browser.send_keys "Hello World" # Such a cheaty way!!
+    @browser.send_keys "Hello World" # Such a cheaty way!!
     
     # Post button clicked
-    browser.button(:class, "create_post_button").click
+    @browser.button(:class, "create_post_button").click
     
     # Click on the posts button 
-    browser.link(:class, "posts").click
+    @browser.link(:class, "posts").click
     
     # Read in the latest posts body 
     topPostContent = browser.element(:class, "post_body")
@@ -42,4 +42,3 @@ describe "Create a Text post" do
     end
   end  
 end
-browser.quit
