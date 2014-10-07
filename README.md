@@ -19,4 +19,25 @@ browser.forward
 
 browser.quit
 
-## Go 
+## Button
+
+browser.button(:id, "btn").enabled?
+
+browser.button(:id, "btn").text
+ 
+browser.button(:id, "btn").click
+
+##Checkbox
+
+browser.checkbox(:id, "btn").set
+
+browser.checkbox(:id, "btn").clear
+
+browser.checkbox(:id, "btn").set?
+
+
+##Radio
+
+browser.radio(:id, "radio").set
+ 
+browser.radio(:id, "radio").set?
