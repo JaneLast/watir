@@ -9,6 +9,7 @@ browser = Watir::Browser.new :chrome
 browser = Watir::Browser.new :ie
 
 ## Go to a website/website controls
+```
 browser.goto "www.google.co.uk"
 
 browser.refresh
@@ -18,6 +19,7 @@ browser.back
 browser.forward
 
 browser.quit
+```
 
 ## Button
 
