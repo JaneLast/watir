@@ -21,6 +21,8 @@ browser.back
 browser.forward
 
 browser.quit
+
+element.flash
 ```
 
 ## Button
